@@ -7,14 +7,24 @@ import { IonicModule } from '@ionic/angular';
 import { InicioPageRoutingModule } from './inicio-routing.module';
 
 import { InicioPage } from './inicio.page';
+import { ComponentsModule } from 'src/app/components/components.module';
+import { MenuController } from '@ionic/angular';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InicioPageRoutingModule
+    InicioPageRoutingModule,
+    ComponentsModule
   ],
-  declarations: [InicioPage]
+  declarations: [
+    InicioPage
+  ],
+  providers:[
+    MenuController
+    
+  ]
 })
 export class InicioPageModule {}

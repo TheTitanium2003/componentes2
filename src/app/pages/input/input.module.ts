@@ -4,19 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AlertPageRoutingModule } from './alert-routing.module';
+import { InputPageRoutingModule } from './input-routing.module';
 
-import { AlertPage } from './alert.page';
-import { ComponentsModule } from '../../components/components.module';
+import { InputPage } from './input.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AlertPageRoutingModule,
+    InputPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [AlertPage]
+  declarations: [InputPage]
 })
-export class AlertPageModule {}
+export class InputPageModule {}

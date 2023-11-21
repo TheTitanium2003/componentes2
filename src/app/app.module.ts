@@ -6,11 +6,23 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { InicioPageModule } from './pages/inicio/inicio.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule,
+    HttpClientModule,
+    InicioPageModule
+  
+  ],
+
+  providers: [
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy}
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
